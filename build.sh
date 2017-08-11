@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t crypto-contrib/bitcoin-testnet-box .
+docker build -t cryptochain/bitcoin-regtest .
