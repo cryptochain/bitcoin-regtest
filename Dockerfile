@@ -3,6 +3,7 @@
 # Ubuntu 14.04 LTS (Trusty Tahr)
 FROM ubuntu:14.04
 MAINTAINER Sean Lavine <lavis88@gmail.com>
+MAINTAINER Dmitry Ananichev <a@qozz.ru>
 
 # add bitcoind from the official PPA
 RUN apt-get update
@@ -33,4 +34,5 @@ WORKDIR /home/tester/bitcoin-testnet-box
 
 # expose two rpc ports for the nodes to allow outside container access
 EXPOSE 19001 19011
-CMD ["/bin/bash"]
+
+CMD ["bitcoind", "-datadir=/home/tester/bitcoin-testnet-box/1", "--printtoconsole"]
