@@ -1,4 +1,4 @@
-# bitcoin-testnet-box docker image
+# cryptochain/bitcoin-regtest docker image
 
 # Ubuntu 14.04 LTS (Trusty Tahr)
 FROM ubuntu:14.04
